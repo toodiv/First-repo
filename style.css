@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+body{
+    text-align: center;
+    width: 100%;
+   
+    
+ 
+ 
+}
+h2{
+   font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+  
+
+}
+
+
+
+.edit{
+    /* background-color: rgb(250, 239, 161); */
+    width: 100%;
+
+
+}
+textarea{
+    width: 100%;
+    min-height: 350px;
+    overflow: scroll;
+    font-size: 1.2em;
+    border: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+    
+}
+
+.edit textarea::placeholder{
+  font-size: 20px;
+  
+}
+
+
+iframe{
+    width: 100%;
+    height: 28em;
+
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+
+}
+
+
+output{
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    display: none;
+    border: 2px solid black;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+width: 100vw;
+/* background-color: rgb(103, 255, 103); */
+}
+
+
+
+.koding {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1.5rem sans-serif;
+    cursor: pointer;
+    will-change: transform;
+    font-weight: bold;
+    
+  }
+  
+  .koding::before,
+  .koding::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    background-color: rgb(0, 0, 0);
+    transition: all 250ms ease-in-out;
+  }
+  
+  .koding::before {
+    width: 2px;
+    height: 100px;
+    box-shadow: 298px 0 rgb(0, 0, 0);
+  }
+  
+  .koding::after {
+    height: 2px;
+    width: 300px;
+    box-shadow: 0 98px rgb(0, 0, 0);
+  }
+  
+  .koding:hover::before {
+    left: -10px;
+    box-shadow: 318px 0 rgb(0, 0, 0);
+  }
+  
+  .koding:hover::after {
+    top: -10px;
+    box-shadow: 0 118px rgb(0, 0, 0);
+  }
+
+  .output p{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 2px;
+  
+    font-family: cursive;
+  }
+
+@media only screen and (max-width: 669px) {
+    .main{
+   
+        flex-wrap: wrap;
+    }
+
+    /* .edit{
+        margin: 10px 0px;
+    } */
+  }
+  
